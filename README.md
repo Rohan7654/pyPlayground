@@ -1,7 +1,7 @@
 # ![pyPlayground Logo](src/assets/logo.jpeg)
 
 [![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://marketplace.visualstudio.com/items?itemName=yourpublisher.py-playground-runner)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/yourpublisher.py-playground-runner)](https://marketplace.visualstudio.com/items?itemName=yourpublisher.py-playground-runner)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/yourpublisher.py-playground-runner)](https://marketplace.visualstudio.com/items?itemName=rohan7654.pyplayground)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 **Quickly run Python code snippets and functions directly inside VS Code with an interactive playground.**
