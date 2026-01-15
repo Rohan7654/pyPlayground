@@ -4,7 +4,7 @@
   "publisher": "rohan7654",
   "description": "Run selected Python code instantly in VS Code with an interactive playground for functions, snippets, and expressions.",
   "version": "0.1.2",
-  "icon": "src/assets/logo.jpeg",
+  "icon": "assets/logo.png",
   "engines": {
     "vscode": "^1.108.0"
   },
