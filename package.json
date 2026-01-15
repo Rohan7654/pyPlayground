@@ -5,7 +5,7 @@
   "description": "Lightweight Python function and selection playground for VS Code",
   "version": "0.1.0",
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.108.0"
   },
   "categories": [
     "Programming Languages"
@@ -21,26 +21,31 @@
     "coding"
   ],
   "contributes": {
-  "commands": [
-    {
-      "command": "pyPlayground.open",
-      "title": "Open pyPlayground"
-    },
-    {
-      "command": "pyPlayground.runSelection",
-      "title": "Run Selected Python Code in pyPlayground"
-    }
-  ],
-  "menus": {
-    "editor/context": [
+    "commands": [
+      {
+        "command": "pyPlayground.open",
+        "title": "Open pyPlayground"
+      },
       {
         "command": "pyPlayground.runSelection",
-        "when": "editorHasSelection && editorLangId == python",
-        "group": "navigation@99"
+        "title": "Run Selected Python Code in pyPlayground"
       }
-    ]
-  }
-},
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "pyPlayground.runSelection",
+          "when": "editorHasSelection && editorLangId == python",
+          "group": "navigation@99"
+        }
+      ]
+    }
+  },
+  "activationEvents": [
+    "onCommand:pyPlayground.open",
+    "onCommand:pyPlayground.runSelection",
+    "onLanguage:python"
+  ],
   "main": "./out/extension.js",
   "scripts": {
     "compile": "tsc -p .",
