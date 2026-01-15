@@ -1,46 +1,70 @@
 {
   "name": "pyplayground",
-  "displayName": "pyPlayground",
+  "displayName": "PyPlayground – Python Code Runner & Playground",
   "publisher": "rohan7654",
-  "description": "Lightweight Python function and selection playground for VS Code",
-  "version": "0.1.0",
+  "description": "Run selected Python code instantly in VS Code with an interactive playground for functions, snippets, and expressions.",
+  "version": "0.1.2",
+  "icon": "src/assets/logo.jpeg",
   "engines": {
     "vscode": "^1.108.0"
   },
   "categories": [
-    "Programming Languages"
-  ],
+  "Programming Languages",
+  "Debuggers",
+  "Other"
+],
   "keywords": [
-    "python",
-    "playground",
-    "repl",
-    "code runner",
-    "vscode extension",
-    "development", 
-    "productivity",
-    "coding"
+  "python",
+  "python playground",
+  "python runner",
+  "run python code",
+  "python repl",
+  "python snippets",
+  "python testing",
+  "vscode python",
+  "python development",
+  "interactive python",
+  "code playground",
+  "code runner",
+  "developer tools",
+  "productivity"
   ],
   "contributes": {
-    "commands": [
-      {
-        "command": "pyPlayground.open",
-        "title": "Open pyPlayground"
-      },
+  "commands": [
+    {
+      "command": "pyPlayground.open",
+      "title": "Open pyPlayground"
+    },
+    {
+      "command": "pyPlayground.runSelection",
+      "title": "Run Selected Python Code in pyPlayground"
+    }
+  ],
+
+  "keybindings": [
+    {
+      "command": "pyPlayground.runSelection",
+      "key": "ctrl+alt+p",
+      "mac": "cmd+alt+p",
+      "when": "editorTextFocus && editorHasSelection && editorLangId == python"
+    },
+    {
+      "command": "pyPlayground.open",
+      "key": "ctrl+shift+p p",
+      "mac": "cmd+shift+p p"
+    }
+  ],
+
+  "menus": {
+    "editor/context": [
       {
         "command": "pyPlayground.runSelection",
-        "title": "Run Selected Python Code in pyPlayground"
+        "when": "editorHasSelection && editorLangId == python",
+        "group": "navigation@99"
       }
-    ],
-    "menus": {
-      "editor/context": [
-        {
-          "command": "pyPlayground.runSelection",
-          "when": "editorHasSelection && editorLangId == python",
-          "group": "navigation@99"
-        }
-      ]
-    }
-  },
+    ]
+  }
+},
   "activationEvents": [
     "onCommand:pyPlayground.open",
     "onCommand:pyPlayground.runSelection",

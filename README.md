@@ -1,8 +1,10 @@
 # ![pyPlayground Logo](src/assets/logo.jpeg)
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://marketplace.visualstudio.com/items?itemName=rohan7654.pyplayground)
-[![Downloads]](https://marketplace.visualstudio.com/items?itemName=rohan7654.pyplayground)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/rohan7654.pyplayground)](https://marketplace.visualstudio.com/items?itemName=rohan7654.pyplayground)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/rohan7654.pyplayground)](https://marketplace.visualstudio.com/items?itemName=rohan7654.pyplayground)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/rohan7654.pyplayground)](https://marketplace.visualstudio.com/items?itemName=rohan7654.pyplayground)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 
 **Quickly run Python code snippets and functions directly inside VS Code with an interactive playground.**
 
@@ -91,6 +93,12 @@ print(add(2, 3))
     Python Version:
     3.12.0
 ```
+## Keyboard Shortcuts
+
+| Action | Windows / Linux | macOS |
+|------|----------------|------|
+| Run selected code in PyPlayground | Ctrl + Alt + P | Cmd + Alt + P |
+| Open PyPlayground panel | Ctrl + Shift + P P | Cmd + Shift + P P |
 
 ## Development
 ```bash
@@ -113,8 +121,6 @@ print(add(2, 3))
 * Multiple Python interpreter selection
 
 * Notebook-style cell execution
-
-* Optional keyboard shortcut for Run in pyPlayground
 
 ## Known Issues
 
