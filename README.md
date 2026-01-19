@@ -8,7 +8,7 @@
 
 **Quickly run Python code snippets and functions directly inside VS Code with an interactive playground.**
 
-pyPlayground Runner lets you test functions, expressions, and multi-line code blocks instantly, with separate output, warnings, and errors, along with Python version tracking.
+pyPlayground lets you test functions, expressions, and multi-line code blocks instantly, with separate output, warnings, and errors, along with Python version tracking.
 
 ---
 
